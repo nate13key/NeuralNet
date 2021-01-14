@@ -1,5 +1,6 @@
 from random import random
 import tools
+import numpy
 
 
 class Node:
@@ -7,7 +8,7 @@ class Node:
         self.num_inputs = num_inputs
         self.weights = []
         for x in range(num_inputs):
-            weight_c = random()
+            weight_c = random() * 2 - 1
             self.weights.append(weight_c)
 
     def run(self, inputs):
